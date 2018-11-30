@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>About</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+<div class="header">
+<IMG SRC="ace.png" height="150" width="300">
+</div>
+
+<div class="navbar">
+        <button class="openbtn" class="right" onclick="openNav()">☰</button>
+    <script>
+        (function() {
+            var cx = '006960450463833841199:8khddalaqnm';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
+    <gcse:search></gcse:search>
+ <a target=-blank href="About.html" class="right" class="active">About</a>
+ <a  target=-blank href="new%20project.html" class="right" class="active">Home</a>
+
+</div>
+
+</div>
+<div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a  target=-blank href="About.html">ABOUT</a>
+        <a  target=-blank href="calculator.html">CALCULATOR</a>
+        <a  target=-blank href="map.html">MAP</a>
+    <a target=-blank href="Hyderabad.html">Hyderabad</a>
+    <a target=-blank href="Vijayawada.html">Vijayawada</a>
+    <a target=-blank href="Vizag.html">Vizag</a>
+        
+      </div>
+
+      
+      <script>
+            function openNav() {
+                document.getElementById("mySidebar").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+            }
+            
+            function closeNav() {
+                document.getElementById("mySidebar").style.width = "0";
+                document.getElementById("main").style.marginLeft= "0";
+            }
+            </script>
+     
+
+ 
+
+  <div class="main">
+     <div style="text-align: center;"><h2>About Us</h2></div>
+
+      <p></p>
+      <button class="collapsible"><center>Ace Computer Enterprises</center></button>
+      <div class="content">
+          <div style="text-align: center;"><p>Ace Computer Enterprises is a multination Company which deals in many techical sectors.<br>
+            We have some new robot technology that can check oil and gas pipes for damage and decay from the inside.<br>
+            We've been test this technology for a while, and it looks feasible.<br>
+            The robots crawl inside the pipes at about 0.1(one-tenth)Km/hour, and the robots have a Mean Time Between Failure (MTBF) rate of about 1,000Km.<br>
+            Assume that robot can enter an above-ground pipeline every 1000 kms.</p></div>
+      </div>
+      
+      
+      
+      
+      
+      <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+      
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+      </script>
+
+   
+
+<div class="container">
+    <div style="text-align:center">
+      <center><h2>Contact Us</h2></center>
+      <center> <p></p></center>
+      <div class="container">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="india">India</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+      
+          <label for="Comment">Comment</label>
+          <textarea id="Comment" name="Comment" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+        </form>
+      </div></div>
+    </div>
+  </div>
+  
+  <script>
+  // Initialize google maps
+  function myMap() {
+    var myCenter = new google.maps.LatLng(30.249885,77.0418547);
+    var mapCanvas = document.getElementById("map");
+    var mapOptions = {center: myCenter, zoom: 12};
+    var map = new google.maps.Map(mapCanvas, mapOptions);
+    var marker = new google.maps.Marker({position:myCenter});
+    marker.setMap(map);
+  }
+  </script>
+  
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsj5I8QiRLR6I4g5y1oBaCJjubKilHz-Q&callback=myMap"></script>
+
+
+   </div>
+  </div>
+
+
+<div class="footer">
+     
+    
+  <h4>OIL AND GAS PIPELINES &#169;</h4>
+  <a href="https://www.facebook.com/Jatin.Thakur.1234" class="fa fa-facebook"></a>
+  <a href="https://twitter.com/JatinTh31958897" class="fa fa-twitter"></a>
+  <a href="https://plus.google.com/u/0/104274393356861665905" class="fa fa-google"></a>
+  <a href="https://www.linkedin.com/in/jatin-thakur-249938169/" class="fa fa-linkedin"></a>
+  <a href="https://www.youtube.com/channel/UCGz6w31qgSZTbCxuhvfevVA" class="fa fa-youtube"></a>
+  <a href="https://www.instagram.com/iam_jatinthakur/?hl=en" class="fa fa-instagram"></a>
+  <p>Made by Jatin Thakur</p>
+</div>
+
+</body>
+</html>
